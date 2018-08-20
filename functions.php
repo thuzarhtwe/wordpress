@@ -201,15 +201,6 @@ require get_template_directory() . '/inc/slider/slider.php';
  */
 require get_template_directory() . '/inc/slider/slider-post-type.php';
 
-/**
- * Load Staff.
- */
-require get_template_directory() . '/inc/staff/staff.php';
-
-/**
- * Load Staff Post Type.
- */
-require get_template_directory() . '/inc/staff/staff_post_type.php';
 
 /**
  * Custom template tags for this theme.

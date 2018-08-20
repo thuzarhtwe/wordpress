@@ -163,7 +163,6 @@
 			<?php
 				if(is_home() && !is_paged()) :
 					echo wptuts_slider_template("[slide]");
-					echo wptuts_staff_template();
 				else :
 					the_breadcrumb();
 				endif;
