@@ -266,15 +266,7 @@ require get_template_directory() . '/inc/custom/popularPosts.php';
 */
 require get_template_directory() . '/inc/custom/relatedPosts.php';
 
-/**
-* Load about Page
-*/
-require get_template_directory() . '/inc/custom/aboutPage.php';
 
-/**
-* Load  Insert Page file.
-*/
-require get_template_directory() . '/inc/custom/insertPage.php';
 
 /**
 * Load  Customizer for Theme color.
@@ -296,17 +288,8 @@ require get_template_directory() . '/inc/custom/customizer-popularPosts-header.p
 */
 require get_template_directory() . '/inc/custom/customizer-relatedPosts-header.php';
 
-/**
-* Load  Customizer for Custom Feature posts
-*/
-require get_template_directory() . '/inc/custom/customizer-feature.php';
 
 /**
 * Load  Customizer for Custom Feature posts
 */
 require get_template_directory() . '/inc/custom/custom-header.php';
-
-/**
-* Load  Customizer for Custom Staff header
-*/
-require get_template_directory() . '/inc/custom/customizer-staff-header.php';
