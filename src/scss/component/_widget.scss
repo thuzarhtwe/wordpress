@@ -1,16 +1,16 @@
 .widget {
-	margin: 8px;
 	width: calc(95% / 4);
+	margin: 8px;
 	padding: 10px;
 	float: left;
 	border-radius: 15px;
 	background-color: #b3daff;
 	@include respond-to() {
+		width: 90%;
 		left: 0;
 		right: 0;
 		margin: 0 auto;
 		margin-top: 10px;
-		width: 90%;
 	}
 		.widget-title {
 			color: black;
@@ -44,8 +44,8 @@
 			}
 			a{
 				display: inline-block;
-				margin-left: 5px;
 				width: 88%;
+				margin-left: 5px;
 			}
 		}
 	}

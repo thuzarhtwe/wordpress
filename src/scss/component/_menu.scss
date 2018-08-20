@@ -1,6 +1,6 @@
 .main-navigation {
-  font-family: $font__noto;
   width: 100%;
+  font-family: $font__noto;
   @include respond-to() {
     width: $size__site-full;
   }
@@ -59,12 +59,12 @@
       &.focus>a, &:hover>a {}
   }
   a {
-      font-weight: normal;
-      font-size: 14px;
       display: block;
-      text-decoration: none;
       padding: 5px;
       color: #9e0c78;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 14px;
       @include respond-to() {
         width: $size__site-full;
       }
@@ -109,10 +109,10 @@
   		width: 50%;
   	}
   	.nav-next {
+      width: 50%;
       margin-top: 0;
   		float: right;
       text-align: right;
-  		width: 50%;
       @include respond-to() {
         width: $size__site-full;
       }
