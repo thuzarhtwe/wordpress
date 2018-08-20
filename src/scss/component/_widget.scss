@@ -1,13 +1,16 @@
 .widget {
-	margin: 0 auto;
-	width: calc(100% / 4);
+	margin: 8px;
+	width: calc(95% / 4);
 	padding: 10px;
 	float: left;
-	border: 4px solid white;
 	border-radius: 15px;
 	background-color: #b3daff;
 	@include respond-to() {
-		width: $size__site-full;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		margin-top: 10px;
+		width: 90%;
 	}
 		.widget-title {
 			color: black;
