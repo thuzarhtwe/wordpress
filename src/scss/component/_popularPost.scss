@@ -1,0 +1,80 @@
+.widget_posts{
+  display: inline-block;
+    width: 100%;
+    @include respond-to() {
+      width: $size__site-full;
+    }
+    h2{
+  		margin: 0 auto;
+      width: 100%;
+  		padding: 10px 0;
+  		text-align: center;
+      background-color: #c3c3c3;
+      color: black;
+      z-index: 1;
+      @include respond-to() {
+        width: $size__site-full;
+      }
+    }
+    ul {
+      position: relative;
+  		margin: 0;
+  		padding: 0;
+  		list-style: none;
+      @include respond-to() {
+        width: $size__site-full;
+      }
+  		li {
+  			position: relative;
+        height: 350px;
+  			width: calc(100% / 4);
+  			float: left;
+        margin-top: 20px;
+  			text-align: center;
+        padding: 20px;
+        margin-bottom: 0;
+        border-radius: 25px;
+        border: 20px solid white;
+        background-color: #c3c3c3;
+        @include respond-to() {
+          width: $size__site-full;
+        }
+        .entry-thumbnail{
+          position: relative;
+          height: 200px;
+          @include respond-to() {
+						width: $size__site-full;
+					}
+          img{
+            position: absolute;
+            top: -75px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 100%;
+            height: 280px;
+            border-radius: 35px;
+            padding: 30px;
+            @include respond-to() {
+  						width: $size__site-full;
+  					}
+          }
+        }
+        p{
+          font-weight: bold;
+          &:hover{
+            text-decoration: underline;
+          }
+          @include respond-to() {
+            width: $size__site-full;
+          }
+        }
+        .view-counts {
+  				color: blue;
+          @include respond-to() {
+						width: $size__site-full;
+					}
+  			}
+    }
+  }
+}

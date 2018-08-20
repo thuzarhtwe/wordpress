@@ -1,0 +1,53 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 14) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Transition
+@mixin transition($duration: .3) {
+	transition: all unquote($duration + "s") ease-in-out;
+}
+
+// Media Query
+@mixin respond-to($from-width: 230px, $to-width: 800px) {
+	@media only screen and (min-width: $from-width) and (max-width: $to-width) {
+		@content;
+	}
+}
+
+// Ellipsis
+@mixin ellipsis($line-to-show:4, $color: yellow) {
+	max-height: 1.3em*$line-to-show;
+	line-height: 1.3; /* Height / no. of lines to display */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: normal;
+}
+
+@mixin cat-ellipsis($max-height) {
+	max-height: $max-height;
+	line-height: 1.3; /* Height / no. of lines to display */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: normal;
+}
