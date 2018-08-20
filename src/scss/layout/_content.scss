@@ -10,10 +10,10 @@
 		.slides{
 			img{
 				display: block;
-				margin: 0 auto;
 				height: 35rem;
-				line-height: 1;
+				margin: 0 auto;
 				padding: 0;
+				line-height: 1;
 				@include respond-to() {
 					// height: 20rem;
 					width: $size__site-full;
@@ -38,14 +38,14 @@
           width: 10%;
 			}
 			a{
-				line-height: 1;
-				text-decoration: none;
 				display: block;
+				position: absolute;
 				width: 50px;
 				height: 40px;
-				margin: -20px 0 0;
-				position: absolute;
 				top: 50%;
+				margin: -20px 0 0;
+				line-height: 1;
+				text-decoration: none;
 				z-index: 10;
 				overflow: hidden;
 				opacity: 0;
@@ -115,9 +115,9 @@
 				      }
 				    }
 				    .entry-summary{
+							width: 100%;
 				      padding: 0 10px;
 				      float: left;
-				      width: 100%;
 				      color: black;
 				      @include respond-to() {
 				        width: $size__site-full;
@@ -128,8 +128,8 @@
 				        width: $size__site-full;
 				      }
 				      img{
+								width: 100%;
 				        height: 20rem;
-				        width: 100%;
 				        @include respond-to() {
 				          width: $size__site-full;
 				        }
@@ -141,9 +141,9 @@
 				        width: $size__site-full;
 				      }
 				      a{
+								padding: 3px;
 				        border: 1px solid black;
 				        border-radius: 3px;
-				        padding: 3px;
 				        background-color: #f00;
 				        color: black;
 				        &:hover{
@@ -156,9 +156,9 @@
 				      }
 				    }
 				    .entry-footer{
+							width: 100%;
 				      padding: 7px 10px;
 				      float: left;
-				      width: 100%;
 				      color: #2a1a95;
 				      @include respond-to() {
 				        width: $size__site-full;
@@ -167,9 +167,9 @@
 				  }
 			}
 			  .page-title{
+					color: black;
 			    text-align: center;
 			    text-decoration: underline  black;
-			    color: black;
 			    @include respond-to() {
 			      width: $size__site-full;
 			    }
@@ -184,8 +184,8 @@
 			  }
 			}
 			.site-main {
+				width: 100%;
 			  margin: 0 auto;
-			  width: 100%;
 			  @include respond-to() {
 			    width: $size__site-full;
 			  }
@@ -199,9 +199,9 @@
 			    background-color:  #eaeded;
 					.page-header{
 						.page-title{
+							color: black;
 					    text-align: center;
 					    text-decoration: underline  black;
-					    color: black;
 					    @include respond-to() {
 					      width: $size__site-full;
 					    }
@@ -213,8 +213,8 @@
 			      }
 			        ul{
 			          @include respond-to() {
+									width: 90%;
 			            padding: 0;
-			            width: 90%;
 			          }
 			        }
 			    }
@@ -225,19 +225,18 @@
 			    }
 			    .post{
 						display: inline-block;
+						width: 90%;
 						margin: 20px;
-				    width: 30%;
-				    float: left;
 				    margin-bottom: 0;
 				    padding: 15px;
 				    border-radius: 15px 50px;
 				    background-color:  #eaeded;
 			      @include respond-to() {
+							width: 90%;
 							left: 0;
 							right: 0;
 							margin: 0 auto;
 							margin-top: 10px;
-			        width: 90%;
 			      }
 			      .entry-thumbnail{
 			        margin: 0 auto;
@@ -245,8 +244,8 @@
 			          width: $size__site-full;
 			        }
 			        img{
+								width: 100%;
 			          height: 20rem;
-			          width: 100%;
 								border-radius: 15px 50px;
 			          @include respond-to() {
 			            width: $size__site-full;
@@ -259,9 +258,9 @@
 			          width: $size__site-full;
 			        }
 			        a{
+								padding: 3px;
 			          border: 1px solid black;
 			          border-radius: 3px;
-			          padding: 3px;
 			          background-color: #f00;
 			          color: black;
 			          &:hover{
@@ -276,9 +275,9 @@
 			    }
 			  }
 			  .entry-header{
+					text-align: center;
 			    font-size: 50px;
 			    font-weight: bold;
-					text-align: center;
 			    @include respond-to() {
 			      width: $size__site-full;
 			    }
@@ -300,9 +299,9 @@
 			    }
 			  }
 			  .entry-summary{
+					width: 100%;
 			    padding: 0 10px;
 			    float: left;
-			    width: 100%;
 			    text-align: initial;
 			    color: black;
 			    @include respond-to() {
@@ -310,9 +309,9 @@
 			    }
 			  }
 			  .entry-footer {
+					width: 100%;
 			    padding: 8px 10px;
 			    float: left;
-			    width: 100%;
 			    color: #2a1a95;
 			    @include respond-to() {
 			      width: $size__site-full;

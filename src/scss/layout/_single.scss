@@ -1,12 +1,12 @@
 .site-main-single {
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
   float: left;
   border: 4px solid white;
   border-radius: 15px 50px;
   background-color:  #eaeded;
   @include respond-to() {
-    
+
     width: $size__site-full;
   }
   .page,
@@ -41,8 +41,8 @@
       }
       .attachment-post-thumbnail{
         width: 100%;
-        padding: 0;
         height: auto;
+        padding: 0;
         border-radius: auto;
         @include respond-to() {
           width: 100%;
@@ -84,29 +84,27 @@
     .widget{
       &.widget-related-post{
         width: 100%;
-        border: 2px;
         margin-bottom: 10px;
+        border: 2px;
         @include respond-to() {
           width: $size__site-full;
         }
         ul{
           li{
+            width: calc(100% / 4);
             margin: 0 auto;
             float: left;
-            width: calc(100% / 4);
             padding: 20px;
             @include respond-to() {
-
               width: $size__site-full;
             }
             img{
-              height: 200px;
               width: 100%;
+              height: 200px;
               padding: 10px;
               @include respond-to() {
-                height: auto;
-
                 width: $size__site-full;
+                height: auto;
               }
             }
           }

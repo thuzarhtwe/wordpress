@@ -1,12 +1,12 @@
 .site-header {
   display: inline-block;
   width: $size__site-full;
-  text-align: center;
-  font-family: $font__remachine;
-  font-size: 1.3rem;
   clear: both;
   background-color: black;
   color: #f07bd0;
+  text-align: center;
+  font-family: $font__remachine;
+  font-size: 1.3rem;
   @include respond-to() {
     width: $size__site-full;
   }

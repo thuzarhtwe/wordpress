@@ -1,7 +1,7 @@
 .widget-area {
-	color: black;
 	display: inherit;
 	width: 100%;
+	color: black;
 	overflow: hidden;
 	@include respond-to() {
 		width: $size__site-full;
@@ -10,9 +10,7 @@
 		ul{
 			li{
 				span{
-
-						margin-left: 5px;
-
+					margin-left: 5px;
 				}
 			}
 		}
