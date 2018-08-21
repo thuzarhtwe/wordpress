@@ -1,0 +1,73 @@
+.widget {
+	width: calc(95% / 4);
+	margin: 8px;
+	padding: 10px;
+	float: left;
+	border-radius: 15px;
+	background-color: #b3daff;
+	@include respond-to() {
+		width: 90%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+		.widget-title {
+			color: black;
+			@include respond-to() {
+				width: $size__site-full;
+			}
+		}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		@include respond-to() {
+			width: $size__site-full;
+		}
+		li {
+			display: inline-block;
+			width: 90%;
+			margin-top: 10px;
+			margin-left: 20px;
+			@include respond-to() {
+				width: 90%;
+			}
+			&::before {
+				vertical-align: top;
+				content: '\f113';
+				font-family: fontawesome;
+				@include respond-to() {
+					width: $size__site-full;
+				}
+			}
+			a{
+				display: inline-block;
+				width: 88%;
+				margin-left: 5px;
+			}
+		}
+	}
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		margin: 1rem;
+		max-width: 100%;
+		@include respond-to() {
+			width: $size__site-full;
+		}
+	}
+	.widget-area{
+		.widget_tag_cloud{
+			.tagcloud{
+				a{
+					font-size: 10rem;
+					@include respond-to() {
+						width: $size__site-full;
+					}
+				}
+			}
+		}
+	}
+}

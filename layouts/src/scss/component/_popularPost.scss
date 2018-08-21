@@ -1,0 +1,83 @@
+.widget_posts{
+  display: inline-block;
+    width: 100%;
+    @include respond-to() {
+      width: $size__site-full;
+    }
+    h2{
+      width: 100%;
+  		margin: 0 auto;
+  		padding: 10px 0;
+      color: black;
+  		text-align: center;
+      background-color: #c3c3c3;
+      z-index: 1;
+      @include respond-to() {
+        width: $size__site-full;
+      }
+    }
+    ul {
+      position: relative;
+  		margin: 0;
+  		padding: 0;
+  		list-style: none;
+      @include respond-to() {
+        width: $size__site-full;
+      }
+  		li {
+        display: inline-block;
+  			position: relative;
+        width: calc(90% / 4);
+        height: 350px;
+        margin: 30px 16.5px;
+        padding: 20px;
+        float: left;
+  			text-align: center;
+        border-radius: 25px;
+        background-color: #c3c3c3;
+        @include respond-to() {
+          width: $size__site-full;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          margin-top: 30px;
+        }
+        .entry-thumbnail{
+          position: relative;
+          height: 200px;
+          @include respond-to() {
+						width: $size__site-full;
+					}
+          img{
+            position: absolute;
+            width: 100%;
+            height: 280px;
+            top: -75px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 35px;
+            @include respond-to() {
+  						width: $size__site-full;
+  					}
+          }
+        }
+        p{
+          font-weight: bold;
+          &:hover{
+            text-decoration: underline;
+          }
+          @include respond-to() {
+            width: $size__site-full;
+          }
+        }
+        .view-counts {
+  				color: blue;
+          @include respond-to() {
+						width: $size__site-full;
+					}
+  			}
+    }
+  }
+}

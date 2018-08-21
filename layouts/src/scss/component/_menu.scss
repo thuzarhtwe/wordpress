@@ -1,0 +1,120 @@
+.main-navigation {
+  width: 100%;
+  font-family: $font__noto;
+  @include respond-to() {
+    width: $size__site-full;
+  }
+  ul {
+      display: none;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      @include respond-to() {
+				width: $size__site-full;
+			}
+      .sub-menu {
+        position: absolute;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+        left: -999rem;
+        z-index: 99999;
+        @include respond-to() {
+  				width: $size__site-full;
+  			}
+        ul {
+            left: -999rem;
+            top: 0;
+            @include respond-to() {
+      				width: $size__site-full;
+      			}
+        }
+        li {
+            &.focus>ul, &:hover>ul {
+                left: 100%;
+                @include respond-to() {
+    							width: $size__site-full;
+    						}
+            }
+        }
+        a {
+            width: 200px;
+            @include respond-to() {
+							width: $size__site-full;
+						}
+        }
+      }
+      li.focus>ul, li:hover>ul {
+          left: auto;
+          @include respond-to() {
+						width: $size__site-full;
+					}
+      }
+  }
+  li {
+      display: inline-block;
+      position: relative;
+      background-color: #b3daff;
+      @include respond-to($to-width: 800px) {
+          width: 100%;
+      }
+      &.focus>a, &:hover>a {}
+  }
+  a {
+      display: block;
+      padding: 5px;
+      color: #9e0c78;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 14px;
+      @include respond-to() {
+        width: $size__site-full;
+      }
+  }
+  .current-menu-ancestor>a, .current-menu-item>a, .current_page_ancestor>a, .current_page_item>a {
+    background-color: #c976b3;
+    color: white;
+  }
+}
+/* Small menu. */
+
+.main-navigation.toggled ul, .menu-toggle {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 37.5rem) {
+    .menu-toggle {
+        display: none;
+        @include respond-to() {
+          width: $size__site-full;
+        }
+    }
+    .main-navigation ul {
+        display: block;
+        background-color: black;
+        @include respond-to() {
+          width: $size__site-full;
+        }
+    }
+}
+.comment-navigation, .post-navigation, .posts-navigation {
+    .site-main & {
+        margin: 0 0 1.5rem;
+        overflow: hidden;
+        @include respond-to() {
+          width: $size__site-full;
+        }
+    }
+    .nav-previous {
+  		float: left;
+  		width: 50%;
+  	}
+  	.nav-next {
+      width: 50%;
+      margin-top: 0;
+  		float: right;
+      text-align: right;
+      @include respond-to() {
+        width: $size__site-full;
+      }
+  	}
+}

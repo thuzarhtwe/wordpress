@@ -1,0 +1,20 @@
+.site-branding{
+	.site-title{
+		font-size: 70px;
+		a{
+			transform: translateX(20px);
+			&:hover{
+				color: white;
+			}
+			@include respond-to() {
+				width: $size__site-full;
+			}
+		}
+	}
+	.site-description{
+		font-size: 25px;
+		@include respond-to() {
+			width: $size__site-full;
+		}
+	}
+}

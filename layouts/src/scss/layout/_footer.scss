@@ -1,0 +1,15 @@
+.site-footer {
+	display: inline-block;
+	position: relative;
+	width: $size__site-full;
+	background-color: #aef5ad;
+	clear: both;
+	@include respond-to() {
+		width: $size__site-full;
+	}
+	.footer-widgets {
+		display: flex;
+	}
+
+	.site-info {}
+}

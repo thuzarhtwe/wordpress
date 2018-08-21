@@ -1,0 +1,131 @@
+.site-main-single {
+  width: 100%;
+  margin: 0 auto;
+  float: left;
+  border: 4px solid white;
+  border-radius: 15px 50px;
+  background-color:  #eaeded;
+  @include respond-to() {
+
+    width: $size__site-full;
+  }
+  .page,
+  .post{
+    width: 100%;
+    @include respond-to() {
+      width: $size__site-full;
+    }
+    .page-title{
+      margin: 0 auto;
+      padding-top: 10px;
+      text-align: center;
+      @include respond-to() {
+        width: $size__site-full;
+      }
+    }
+    .page-content{
+      padding: 0 30px;
+      @include respond-to() {
+        width: $size__site-full;
+      }
+    }
+  }
+  .post{
+    padding: 20px;
+    @include respond-to() {
+      width: $size__site-full;
+    }
+    .entry-thumbnail{
+      @include respond-to() {
+        width: $size__site-full;
+      }
+      .attachment-post-thumbnail{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        border-radius: auto;
+        @include respond-to() {
+          width: 100%;
+        }
+      }
+    }
+    .entry-header{
+      @include respond-to() {
+        width: 90%;
+      }
+    }
+    .entry-content{
+      @include respond-to() {
+        width: $size__site-full;
+      }
+        ul{
+          @include respond-to() {
+            padding: 0;
+            width: 90%;
+          }
+        }
+    }
+    .entry-title{
+      width: 100%;
+      text-align: center;
+      text-decoration: underline  black;
+      @include respond-to() {
+        width: $size__site-full;
+      }
+    }
+    .widget,
+    .entry-header,
+    .entry-content{
+      width: 100%;
+      @include respond-to() {
+        width: $size__site-full;
+      }
+    }
+    .widget{
+      &.widget-related-post{
+        width: 100%;
+        margin-bottom: 10px;
+        border: 2px;
+        margin-left: auto;
+        @include respond-to() {
+          width: $size__site-full;
+        }
+        ul{
+          li{
+            width: calc(100% / 4);
+            margin: 0 auto;
+            padding: 20px;
+            float: left;
+            @include respond-to() {
+              width: $size__site-full;
+            }
+            &::before {
+      				vertical-align: top;
+      				content: '\f113';
+      				font-family: fontawesome;
+      				@include respond-to() {
+      					width: $size__site-full;
+      				}
+      			}
+            img{
+              width: 100%;
+              height: 200px;
+              padding: 10px;
+              @include respond-to() {
+                width: $size__site-full;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    .post-navigation{
+      .nav-perious{
+        @include respond-to() {
+          width: $size__site-full;
+        };
+      }
+    }
+  }
+}

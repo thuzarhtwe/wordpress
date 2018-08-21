@@ -1,0 +1,36 @@
+.site-header {
+  display: inline-block;
+  width: $size__site-full;
+  clear: both;
+  background-color: black;
+  color: #f07bd0;
+  text-align: center;
+  font-family: $font__remachine;
+  font-size: 1.3rem;
+  @include respond-to() {
+    width: $size__site-full;
+  }
+  a{
+    &:hover{
+      color: #ff15c2;
+    }
+    @include respond-to() {
+      width: $size__site-full;
+    }
+  }
+  .header-menu{
+    ul{
+      li{
+        &:hover{
+          background-color: black;
+        }
+        &:hover>a{
+          color: white;
+        }
+        @include respond-to() {
+          width: $size__site-full;
+        }
+      }
+    }
+  }
+}
