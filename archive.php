@@ -46,7 +46,7 @@ get_header();
 			else :
 				get_template_part( 'template-parts/content', 'none' );
 			endif;
-		?>
+		?><br/><br/>
 		<?php the_posts_pagination(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->

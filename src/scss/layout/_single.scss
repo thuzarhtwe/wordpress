@@ -86,6 +86,7 @@
         width: 100%;
         margin-bottom: 10px;
         border: 2px;
+        margin-left: auto;
         @include respond-to() {
           width: $size__site-full;
         }
@@ -93,8 +94,8 @@
           li{
             width: calc(100% / 4);
             margin: 0 auto;
-            float: left;
             padding: 20px;
+            float: left;
             @include respond-to() {
               width: $size__site-full;
             }

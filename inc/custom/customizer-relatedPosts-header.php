@@ -1,4 +1,4 @@
-<?php 
+<?php
 	function theme_relatedPost_header_customizer($wp_customize) {
 	$wp_customize->add_section('scm_test_relatedPost_scheme', array(
 		'title'    => '関連する投稿のヘッダー',

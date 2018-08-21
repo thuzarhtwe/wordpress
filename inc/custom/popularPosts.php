@@ -47,7 +47,7 @@ function popularPosts() {
       	echo the_custom_popularPost();
       	echo '<ul>';
         while ( $popularpost->have_posts() ) : $popularpost->the_post();
-        	  echo '<li class="post">';
+        	  echo '<li>';
         		  echo '<a href="';
         		    the_permalink();
         		  echo '">';

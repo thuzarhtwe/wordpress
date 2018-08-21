@@ -57,7 +57,6 @@
 			$('<style>.pagination .page-numbers.current, .pagination a.page-numbers:hover{color:' + newval + ' !important}</style>').appendTo('head');
 		} );
 	} );
-
 	wp.customize( 'themename_text_color', function( value ) {
 		value.bind( function( newval ) {
 			$( '.site .site-content .content-area .site-main .entry-summary' ).css({'color': newval});
@@ -83,7 +82,6 @@
 			$( '.pagination .page-numbers' ).css({'color': newval});
 			$( '.widget-area a' ).css({'color': newval});
 			$( '.site-main-single a' ).css({'color': newval});
-			$( '.crumbs a' ).css({'color': newval});
 		} );
 	} );
 	// wp.customize( 'themename_a_bgcolor', function( value ) {

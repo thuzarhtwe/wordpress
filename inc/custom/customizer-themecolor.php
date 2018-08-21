@@ -99,7 +99,7 @@ function header_footer_color_customizer($wp_customize) {
 		'settings'   => 'themename_theme_bgcolor1',
 	)));
 	$wp_customize->add_setting('themename_header_bgcolor', array(
-		'default'           => $default_theme_bgcolor1,
+		'default'           => $defaule_header_bgcolor,
 		'wp-head-callback'  => 'scm_test_style',
 		'transport'         => 'postMessage'
 	));

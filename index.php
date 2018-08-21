@@ -41,6 +41,7 @@ get_header();
 				endif;
 			?>
 		</div>
+		<br><br>
 	</main><!-- #main -->
 </div><!-- #primary -->
 <?php the_posts_pagination(); ?>

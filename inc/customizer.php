@@ -49,10 +49,13 @@ if ( ! function_exists( 'scm_test_style' ) ) :
 	 			color: #<?php echo esc_attr( $header_text_color ); ?>;
 	 		}
 	 	<?php endif; ?>
+		body{
+			background-color: #<?php echo esc_attr( $body_bg_color ); ?>;
+		}
 			.site-header{
 				background-color: <?php echo esc_attr( $theme_bgcolor1 ); ?>;
 			}
-			.site-main-single .post .widget, .site-main-single .post .entry-header, .site-main-single .post .entry-content p,
+			.site-main-single .post .entry-content p,
 			.site .site-content .content-area .site-main-archive .top-page .post .entry-summary,
 			.site .site-content .content-area .site-main .entry-summary{
 				color: <?php echo esc_attr( $text_color ); ?>;
@@ -78,7 +81,6 @@ if ( ! function_exists( 'scm_test_style' ) ) :
 			.pagination .page-numbers,
 			.widget-area a,
 			.site-main-single a,
-			.crumbs a,
 			.main-navigation a{
 				color: <?php echo esc_attr( $a_bgcolor ); ?>;
 			}

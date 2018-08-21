@@ -16,7 +16,7 @@ function relatedPosts() {
 		$my_query = new WP_Query( $args );
 		if ($my_query->have_posts()) :
 			echo '<aside class="widget widget-related-post">';
-			echo '<h3 id="wave" class="widget-title">関連記事</h3>';
+			echo '<h3 class="widget-title">関連記事</h3>';
 			echo '<ul>';
 			while( $my_query->have_posts() ) :
 				$my_query->the_post();

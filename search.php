@@ -35,6 +35,7 @@ get_header();
 			</div>
 	</main><!-- #main -->
 </section><!-- #primary -->
+<br/><br/>
 <?php the_posts_pagination(); ?>
 <?php
 	get_sidebar();
