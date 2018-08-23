@@ -85,8 +85,8 @@ function header_footer_color_customizer($wp_customize) {
 	$default_mainpost_bgcolor = "#f0f0f0";
 	$default_popularpost_bgcolor ="#c3c3c3";
 	$default_a_bgcolor = "#9e0c78";
-	$default_readmore_bgcolor = "red";
-	$default_text_color = "black";
+	$default_readmore_bgcolor = "#ff3a3a";
+	$default_text_color = "#000000";
 
 	$wp_customize->add_setting('themename_theme_bgcolor1', array(
 		'default'           => $default_theme_bgcolor1,
@@ -94,7 +94,7 @@ function header_footer_color_customizer($wp_customize) {
 		'transport'         => 'postMessage'
 	));
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'themename_theme_bgcolor1', array(
-		'label'      => 'Theme bgcolor1',
+		'label'      => 'Theme color1',
 		'section'    => 'colors',
 		'settings'   => 'themename_theme_bgcolor1',
 	)));
@@ -154,7 +154,7 @@ function header_footer_color_customizer($wp_customize) {
 		'transport'         => 'postMessage'
 	));
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'themename_a_bgcolor', array(
-		'label'      => 'A bgcolor',
+		'label'      => 'Text Link color',
 		'section'    => 'colors',
 		'settings'   => 'themename_a_bgcolor',
 	)));
@@ -195,7 +195,7 @@ function themename_customize_color_register( $wp_customize ) {
 	$wp_customize->get_setting( 'themename_popularpost_bgcolor' )->transport      = 'postMessage';
 	$wp_customize->get_setting( 'themename_a_bgcolor' )->transport      = 'postMessage';
 	$wp_customize->get_setting( 'themename_text_color' )->transport      = 'postMessage';
-// 	$wp_customize->get_setting( 'themename_readmore_bgcolor' )->transport      = 'postMessage';
+	$wp_customize->get_setting( 'themename_readmore_bgcolor' )->transport      = 'postMessage';
 }
 add_action( 'customize_register', 'themename_customize_color_register' );
 ?>

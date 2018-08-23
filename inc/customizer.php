@@ -60,13 +60,22 @@ if ( ! function_exists( 'scm_test_style' ) ) :
 			.site .site-content .content-area .site-main .entry-summary{
 				color: <?php echo esc_attr( $text_color ); ?>;
 			}
-			.site .site-content .content-area .site-main-archive .top-page .post .read-more a:hover,
-			.site .site-content .content-area .site-main .top-page .post .read-more a:hover{
-				background-color: <?php echo esc_attr( $theme_bgcolor1 ); ?>;
-			}
-			.site .site-content .content-area .site-main .top-page .post .read-more a{
+			.site .site-content .content-area .site-main-archive .post .read-more a,
+			.site .site-content .content-area .site-main .post .read-more a{
 				color: <?php echo esc_attr( $theme_bgcolor1 ); ?>;
 			}
+			.site .site-content .content-area .site-main-archive .post .read-more a:hover,
+			.site .site-content .content-area .site-main .post .read-more a:hover{
+				background-color: <?php echo esc_attr( $theme_bgcolor1 ); ?>;
+			}
+			/*.site .site-content .content-area .site-main-archive .top-page .post .read-more a:hover,
+			.site .site-content .content-area .site-main .top-page .post .read-more a:hover{
+				background-color: <?php echo esc_attr( $theme_bgcolor1 ); ?>;
+			}*/
+			/*.site .site-content .content-area .site-main-archive .top-page .post .read-more a,
+			.site .site-content .content-area .site-main .top-page .post .read-more a{
+				color: <?php echo esc_attr( $theme_bgcolor1 ); ?>;
+			}*/
 			.main-navigation ul{
 				background-color: <?php echo esc_attr( $theme_bgcolor1 ); ?>;
 			}
@@ -97,10 +106,18 @@ if ( ! function_exists( 'scm_test_style' ) ) :
 			.site-main-single{
 				background-color: <?php echo esc_attr( $mainpost_bgcolor ); ?>;
 			}
-			.site .site-content .content-area .site-main-archive .top-page .post .read-more a,
-			.site .site-content .content-area .site-main .top-page .post .read-more a{
+			.site .site-content .content-area .site-main-archive .post .read-more a,
+			.site .site-content .content-area .site-main .post .read-more a{
 				background-color: <?php echo esc_attr( $readmore_bgcolor ); ?>;
 			}
+			.site .site-content .content-area .site-main-archive .post .read-more a:hover,
+			.site .site-content .content-area .site-main .post .read-more a:hover{
+				color: <?php echo esc_attr( $readmore_bgcolor ); ?>;
+			}
+			/*.site .site-content .content-area .site-main-archive .top-page .post .read-more a,
+			.site .site-content .content-area .site-main .top-page .post .read-more a{
+				background-color: <?php echo esc_attr( $readmore_bgcolor ); ?>;
+			}*/
 			.pagination .page-numbers.current, .pagination a.page-numbers:hover{
 				background-color: <?php echo esc_attr( $readmore_bgcolor ); ?>;
 			}
@@ -110,10 +127,14 @@ if ( ! function_exists( 'scm_test_style' ) ) :
 			.widget{
 					background-color: <?php echo esc_attr( $widget_bgcolor ); ?>;
 			}
-			.site .site-content .content-area .site-main-archive .top-page .post .read-more a:hover,
+			/*.site .site-content .content-area .site-main-archive .top-page .post .read-more a:hover,
 			.site .site-content .content-area .site-main .top-page .post .read-more a:hover{
 				color: <?php echo esc_attr( $readmore_bgcolor ); ?>;
-			}
+			}*/
+			/*.site .site-content .content-area .site-main-archive .top-page .post .read-more a:hover,
+			.site .site-content .content-area .site-main .top-page .post .read-more a:hover{
+				color: <?php echo esc_attr( $readmore_bgcolor ); ?>;
+			}*/
 
 			.header-menu ul li a:hover{
 				background-color: <?php echo esc_attr( $theme_bgcolor1 ); ?>;

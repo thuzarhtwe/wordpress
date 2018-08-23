@@ -1,59 +1,22 @@
 .site {
-	width: 1500px;
+	width: 1349px;
 	margin: 0 auto;
 	overflow: hidden;
 	@include respond-to() {
 		width: $size__site-full;
 	}
 	.flexslider{
-
-		.slides{
-			img{
-				display: block;
-				height: 35rem;
-				margin: 0 auto;
-				padding: 0;
-				line-height: 1;
-				@include respond-to() {
-					// height: 20rem;
-					width: $size__site-full;
-				}
-			}
-		}
 		.flex-control-paging{
 			text-align: center;
 		}
 		.flex-direction-nav{
 			.flex-prev{
-				left: 10px;
 				margin-left: 10px;
-      	text-align: left;
       	@include respond-to() {
           width: 30px;
 			}
-			.flex-next{
-				right: 10px;
-      	text-align: right;
-      	@include respond-to() {
-          width: 10%;
-			}
-			a{
-				display: block;
-				position: absolute;
-				width: 50px;
-				height: 40px;
-				top: 50%;
-				margin: -20px 0 0;
-				line-height: 1;
-				text-decoration: none;
-				z-index: 10;
-				overflow: hidden;
-				opacity: 0;
-				cursor: pointer;
-			}
 		}
 	}
-}
 }
 	.site-content {
 		width: 100%;
@@ -70,7 +33,7 @@
 			.site-main{
 				.post{
 					display: inline-block;
-					width: 30%;
+					width: 30.35%;
 					margin: 20px;
 					margin-bottom: 0;
 					padding: 15px;
@@ -144,6 +107,7 @@
 						margin: 0 auto;
 						@include respond-to() {
 							width: $size__site-full;
+							text-align: center;
 						}
 						a{
 							padding: 3px;

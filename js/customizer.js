@@ -41,9 +41,11 @@
 			$( '.site-header' ).css({'background-color': newval});
 			$( '.main-navigation ul' ).css({'background-color': newval});
 			$( '.main-navigation .current-menu-ancestor>a,.main-navigation .current-menu-item>a,.main-navigation .current_page_ancestor>a,.main-navigation .current_page_item>a' ).css({'background-color': newval});
-			$( '.site .site-content .content-area .site-main .top-page .post .read-more a' ).css({'background-color': newval});
+			$( '.site .site-content .content-area .site-main .post .read-more a, .site .site-content .content-area .site-main-archive .post .read-more a' ).css({'color': newval});
+			// $( '.site .site-content .content-area .site-main .top-page .post .read-more a' ).css({'background-color': newval});
 
-			$('<style>.site .site-content .content-area .site-main .top-page .post .read-more a:hover{background-color:' + newval + ' !important}</style>').appendTo('head');
+			// $('<style>.site .site-content .content-area .site-main .top-page .post .read-more a:hover{background-color:' + newval + ' !important}</style>').appendTo('head');
+			$('<style>.site .site-content .content-area .site-main .post .read-more a:hover, .site .site-content .content-area .site-main-archive .post .read-more a:hover{background-color:' + newval + ' !important}</style>').appendTo('head');
 			$('<style>.site-title a:hover{color:' + newval + ' !important}</style>').appendTo('head');
 			$('<style>.header-menu ul li:hover{color:' + newval + ' !important}</style>').appendTo('head');
 			$('<style>.header-menu ul li a:hover{background-color:' + newval + ' !important}</style>').appendTo('head');
@@ -112,12 +114,14 @@
 	} );
 	wp.customize( 'themename_readmore_bgcolor', function( value ) {
 		value.bind( function( newval ) {
-			$( '.site .site-content .content-area .site-main .top-page .post .read-more a' ).css({'background-color': newval});
-			$( '.site .site-content .content-area .site-main-archive .top-page .post .read-more a' ).css({'background-color': newval});
+			$( '.site .site-content .content-area .site-main .post .read-more a, .site .site-content .content-area .site-main-archive .post .read-more a' ).css({'background-color': newval});
+			// $( '.site .site-content .content-area .site-main .top-page .post .read-more a' ).css({'background-color': newval});
+			// $( '.site .site-content .content-area .site-main-archive .top-page .post .read-more a' ).css({'background-color': newval});
+			$('<style>.site .site-content .content-area .site-main .post .read-more a:hover, .site .site-content .content-area .site-main-archive .post .read-more a:hover{color:' + newval + ' !important}</style>').appendTo('head');
 			$('<style>.pagination .page-numbers.current,.pagination a.page-numbers:hover{background-color:' + newval + ' !important}</style>').appendTo('head');
-			$('<style>.site .site-content .content-area .site-main-archive .top-page .post .read-more a:hover{color:' + newval + ' !important}</style>').appendTo('head');
-			$('<style>.site .site-content .content-area .site-main .top-page .post .read-more a:hover{color:' + newval + ' !important}</style>').appendTo('head');
-			$('<style>.site .site-content .content-area .site-main-archive .top-page .post .read-more a:hover{color:' + newval + ' !important}</style>').appendTo('head');
+			// $('<style>.site .site-content .content-area .site-main-archive .top-page .post .read-more a:hover{color:' + newval + ' !important}</style>').appendTo('head');
+			// $('<style>.site .site-content .content-area .site-main .top-page .post .read-more a:hover{color:' + newval + ' !important}</style>').appendTo('head');
+			// $('<style>.site .site-content .content-area .site-main-archive .top-page .post .read-more a:hover{color:' + newval + ' !important}</style>').appendTo('head');
 		} );
 	} );
 
