@@ -19,7 +19,7 @@ var conf = {
   dist_csscomb: './csscomb.json',
   dist_scss: "./src/scss/**/*.scss",
   dist_watchcss: "['./inc/slider/css/*.css', './layouts/*.css']",
-  dist_watchjs: "./js/*.js",
+  dist_watchjs: "./src/js/*.js",
   dist_php: "['./*.php', './template-parts/*.php', './inc/**/*.php']"
 
 };
